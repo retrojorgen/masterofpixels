@@ -1,0 +1,10 @@
+<div class="application-padded">
+    <div class="events-list">
+        <h1>Velg event</h1>
+        <ul>
+            <li ng-repeat="event in events">
+                <a ng-href="/event/{{event._id}}">{{event.eventName}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+/* line 1, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu {
+  color: white;
+  text-align: center;
+  height: 50px;
+  position: relative;
+  display: block;
+}
+/* line 7, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu a {
+  color: white;
+}
+/* line 9, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu a:hover, .mobile-top-menu a:active, .mobile-top-menu a:focus {
+  color: white;
+  text-decoration: none;
+}
+/* line 16, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu .date-picker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+}
+/* line 24, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu .date-picker span {
+  vertical-align: middle;
+  display: inline-block;
+  transform: translateY(-2px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 30, ../app/scss/mobileTopMenu.scss */
+.mobile-top-menu .date-picker span:first-letter {
+  text-transform: uppercase;
+}
+
+/* line 37, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu {
+  display: inline-block;
+  height: 50px;
+  vertical-align: middle;
+  color: white;
+  font-size: 16px;
+  padding-left: 20px;
+}
+/* line 45, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu a {
+  color: white;
+}
+/* line 47, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu a:hover, .desktop-top-menu a:active, .desktop-top-menu a:focus {
+  color: white;
+  text-decoration: none;
+}
+/* line 54, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu .date-picker {
+  margin-top: 14px;
+  display: inline-block;
+}
+/* line 57, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu .date-picker span {
+  display: inline-block;
+  transform: translateY(-2px);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 62, ../app/scss/mobileTopMenu.scss */
+.desktop-top-menu .date-picker span:first-letter {
+  text-transform: uppercase;
+}

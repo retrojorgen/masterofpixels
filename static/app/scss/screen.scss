@@ -1,0 +1,304 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+//@import "compass";
+
+$list-white: #f7f7f7;
+$border-grey: #cccccc;
+$black-font: #262626;
+$blue: #0073f5;
+$purple: #8167fd;
+$red-error: #eb6941;
+$red-error-background: #fdbfab;
+
+
+$information-phone: "only screen and (max-width : 800px)";
+
+
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/pixel-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/pixel-bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+
+  font-family: 'Press Start 2P', cursive;
+}
+
+.highscore {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+
+  color: white;
+  text-transform: uppercase;
+  .background-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/master-of-pixels-background.png);
+    background-repeat: no-repeat;
+  }
+  table {
+    max-width: 450px;
+    width: 450px;
+    td {
+      padding: 5px;
+      &.name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 300px;
+        width: 300px;
+      }
+      &.score {
+        text-align: right;
+      }
+    }
+  }
+  .score-per-game-wrapper {
+    position: absolute;
+    top: 81px;
+    right: 192px;
+
+    .score-per-game {
+      margin-bottom: 40px;
+      h2 {
+        color: #febafe;
+      }
+      td {
+        color: #2dfffe;
+      }
+    }
+  }
+}
+h1 {
+  color: #fc0d1b;
+  border-bottom: 4px solid #fc0d1b;
+}
+h4 {
+  color: #feb75b;
+}
+
+.rules {
+  max-width: 832px;
+  width: 832px;
+  color: #febafe;
+  position: absolute;
+  top: 719px;
+  left: 84px;
+  h3 {
+    font-size: 30px;
+  }
+  ol {
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
+  }
+  li {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.top-10-score-container {
+  position: absolute;
+  left: 72px;
+  top: 44px;
+  width: 832px;
+  max-width: 832px;
+  height: 628px;
+  .top-10 {
+    width: 832px;
+    max-width: 832px;
+    color:#efee00;
+    td {
+    }
+    tr {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+
+        td {
+          font-size: 30px;
+          padding-bottom: 20px;
+
+        }
+
+      }
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10) {
+        td {
+          font-size: 20px;
+          padding-bottom: 20px;
+          color: #feb75b;
+        }
+      }
+    }
+    .name {
+      width: 480px;
+    }
+  }
+}
+
+
+.user-list {
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.user-controls {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-filter {
+  background-color: #fc0d1b;
+  color: white;
+  padding: 20px;
+  max-width: 720px;
+  display: inline-block;
+  border: 2px solid transparent;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  &::placeholder {
+    color: white
+  }
+}
+
+
+.events-list {
+  a.new-player {
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    padding: 20px;
+    background-color: #feb75b;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid black;
+    display: inline-block;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    display: block;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.user-edit-row {
+  margin-bottom: 60px;
+  label {
+    margin-bottom: 16px;
+    display: block;
+    color: #2dfffe;
+  }
+
+  input {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    color: white;
+    border: 0;
+    border-bottom: 2px solid #fc0d1b;
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px;
+    background-color: transparent;
+
+  }
+}
+
+.save-game {
+ background-color: #feb75b;
+  padding: 20px;
+  color: black;
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  text-transform: uppercase;
+
+}
+
+.application-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid #fc0d1b;
+  margin-bottom: 40px;
+  h1 {
+    border-bottom: 0;
+    margin: 0;
+  }
+  .back-button {
+    display: inline-block;
+    background-color: #fc0d1b;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+}
+
+
+
+.application-padded {
+  padding: 20px;
+}

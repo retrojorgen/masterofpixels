@@ -1,0 +1,28 @@
+<div class="application-padded">
+    <div class="events-list">
+        <div class="application-header">
+            <a ng-href="/event/{{eventId}}" class="back-button">< Tilbake</a>
+            <h1>Rediger spiller</h1>
+        </div>
+
+        <div class="user-edit-row">
+            <label>Spillers fulle navn</label>
+            <input ng-model="player.fullName">
+        </div>
+
+        <div class="user-edit-row">
+            <label>Spillers e-postadresse</label>
+            <input ng-model="player.email">
+        </div>
+
+        <div class="user-edit-row" ng-repeat="score in scores">
+            <label>Score in {{gameLookup[score.gameId].gameName}}</label>
+            <input ng-model="score.score">
+        </div>
+    </div>
+
+    <button ng-click="update()" class="save-game">
+        <span ng-if="player._id">Oppdater</span>
+        <span ng-if="!player._id">Lagre</span>
+    </button>
+</div>

@@ -1,0 +1,296 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'pixel';
+  src: url("../fonts/pixel-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pixel';
+  src: url("../fonts/pixel-bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+/* line 35, ../app/scss/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 39, ../app/scss/screen.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 43, ../app/scss/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* line 52, ../app/scss/screen.scss */
+.highscore {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 61, ../app/scss/screen.scss */
+.highscore .background-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/master-of-pixels-background.png);
+  background-repeat: no-repeat;
+}
+/* line 70, ../app/scss/screen.scss */
+.highscore table {
+  max-width: 450px;
+  width: 450px;
+}
+/* line 73, ../app/scss/screen.scss */
+.highscore table td {
+  padding: 5px;
+}
+/* line 75, ../app/scss/screen.scss */
+.highscore table td.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  width: 300px;
+}
+/* line 82, ../app/scss/screen.scss */
+.highscore table td.score {
+  text-align: right;
+}
+/* line 87, ../app/scss/screen.scss */
+.highscore .score-per-game-wrapper {
+  position: absolute;
+  top: 81px;
+  right: 192px;
+}
+/* line 92, ../app/scss/screen.scss */
+.highscore .score-per-game-wrapper .score-per-game {
+  margin-bottom: 40px;
+}
+/* line 94, ../app/scss/screen.scss */
+.highscore .score-per-game-wrapper .score-per-game h2 {
+  color: #febafe;
+}
+/* line 97, ../app/scss/screen.scss */
+.highscore .score-per-game-wrapper .score-per-game td {
+  color: #2dfffe;
+}
+
+/* line 103, ../app/scss/screen.scss */
+h1 {
+  color: #fc0d1b;
+  border-bottom: 4px solid #fc0d1b;
+}
+
+/* line 107, ../app/scss/screen.scss */
+h4 {
+  color: #feb75b;
+}
+
+/* line 111, ../app/scss/screen.scss */
+.rules {
+  max-width: 832px;
+  width: 832px;
+  color: #febafe;
+  position: absolute;
+  top: 719px;
+  left: 84px;
+}
+/* line 118, ../app/scss/screen.scss */
+.rules h3 {
+  font-size: 30px;
+}
+/* line 121, ../app/scss/screen.scss */
+.rules ol {
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+}
+/* line 126, ../app/scss/screen.scss */
+.rules li {
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 132, ../app/scss/screen.scss */
+.top-10-score-container {
+  position: absolute;
+  left: 72px;
+  top: 44px;
+  width: 832px;
+  max-width: 832px;
+  height: 628px;
+}
+/* line 139, ../app/scss/screen.scss */
+.top-10-score-container .top-10 {
+  width: 832px;
+  max-width: 832px;
+  color: #efee00;
+}
+/* line 151, ../app/scss/screen.scss */
+.top-10-score-container .top-10 tr:nth-child(1) td, .top-10-score-container .top-10 tr:nth-child(2) td, .top-10-score-container .top-10 tr:nth-child(3) td, .top-10-score-container .top-10 tr:nth-child(4) td {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+/* line 164, ../app/scss/screen.scss */
+.top-10-score-container .top-10 tr:nth-child(5) td, .top-10-score-container .top-10 tr:nth-child(6) td, .top-10-score-container .top-10 tr:nth-child(7) td, .top-10-score-container .top-10 tr:nth-child(8) td, .top-10-score-container .top-10 tr:nth-child(9) td, .top-10-score-container .top-10 tr:nth-child(10) td {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #feb75b;
+}
+/* line 171, ../app/scss/screen.scss */
+.top-10-score-container .top-10 .name {
+  width: 480px;
+}
+
+/* line 179, ../app/scss/screen.scss */
+.user-list li {
+  margin-bottom: 5px;
+}
+
+/* line 184, ../app/scss/screen.scss */
+.user-controls {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* line 192, ../app/scss/screen.scss */
+.user-filter {
+  background-color: #fc0d1b;
+  color: white;
+  padding: 20px;
+  max-width: 720px;
+  display: inline-block;
+  border: 2px solid transparent;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+}
+/* line 201, ../app/scss/screen.scss */
+.user-filter::placeholder {
+  color: white;
+}
+
+/* line 208, ../app/scss/screen.scss */
+.events-list a.new-player {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  padding: 20px;
+  background-color: #feb75b;
+  font-family: 'Press Start 2P', cursive;
+  border: 2px solid black;
+  display: inline-block;
+}
+/* line 218, ../app/scss/screen.scss */
+.events-list h1 {
+  text-align: center;
+  padding: 20px;
+}
+/* line 222, ../app/scss/screen.scss */
+.events-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 227, ../app/scss/screen.scss */
+.events-list ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* line 232, ../app/scss/screen.scss */
+.events-list a {
+  display: block;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 244, ../app/scss/screen.scss */
+.user-edit-row {
+  margin-bottom: 60px;
+}
+/* line 246, ../app/scss/screen.scss */
+.user-edit-row label {
+  margin-bottom: 16px;
+  display: block;
+  color: #2dfffe;
+}
+/* line 252, ../app/scss/screen.scss */
+.user-edit-row input {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: white;
+  border: 0;
+  border-bottom: 2px solid #fc0d1b;
+  display: block;
+  width: 100%;
+  padding: 10px 0 10px;
+  background-color: transparent;
+}
+
+/* line 266, ../app/scss/screen.scss */
+.save-game {
+  background-color: #feb75b;
+  padding: 20px;
+  color: black;
+  display: block;
+  width: 100%;
+  border: 0;
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* line 280, ../app/scss/screen.scss */
+.application-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid #fc0d1b;
+  margin-bottom: 40px;
+}
+/* line 287, ../app/scss/screen.scss */
+.application-header h1 {
+  border-bottom: 0;
+  margin: 0;
+}
+/* line 291, ../app/scss/screen.scss */
+.application-header .back-button {
+  display: inline-block;
+  background-color: #fc0d1b;
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+/* line 302, ../app/scss/screen.scss */
+.application-padded {
+  padding: 20px;
+}
