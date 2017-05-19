@@ -198,6 +198,7 @@ h4 {
   border: 2px solid transparent;
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
+  flex: 1;
   &::placeholder {
     color: white
   }
@@ -212,7 +213,7 @@ h4 {
     padding: 20px;
     background-color: #feb75b;
     font-family: 'Press Start 2P', cursive;
-    border: 2px solid black;
+    border: 2px solid white;
     display: inline-block;
   }
   h1 {
@@ -227,6 +228,10 @@ h4 {
     li {
       padding: 10px;
       margin-bottom: 10px;
+      display: flex;
+      .delete-button {
+        margin-left: 20px;
+      }
     }
   }
   a {
@@ -237,7 +242,8 @@ h4 {
     color: white;
     text-decoration: none;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    flex: 1;
   }
 }
 
@@ -294,6 +300,7 @@ h4 {
     color: white;
     padding: 10px 20px;
     text-transform: uppercase;
+    max-width: 20%;
   }
 }
 
@@ -301,4 +308,17 @@ h4 {
 
 .application-padded {
   padding: 20px;
+}
+
+.delete-button {
+  display: block;
+  background-color: #fc0d1b;
+  border: 2px solid white;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
 }

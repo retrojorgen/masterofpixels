@@ -4,11 +4,13 @@
         <div class="user-controls">
             <input ng-model="userFilter" class="user-filter" placeholder="Søk etter spiller">
             <a ng-href="/event/{{currentEvent._id}}/edit-existing-player" class="new-player">+ Ny spiller</a>
+
         </div>
 
         <ul class="user-list">
             <li ng-repeat="player in players | orderBy: 'fullName' | filter: userFilter">
                 <a ng-href="/event/{{currentEvent._id}}/edit-existing-player/{{player._id}}">{{player.fullName}}</a>
+                <button class="delete-button" ng-click="deletePlayer(player)">Slett</button>
             </li>
         </ul>
     </div>

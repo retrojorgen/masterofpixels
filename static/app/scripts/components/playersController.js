@@ -20,4 +20,12 @@ masterOfPixels.component('players', {
                 });
                 console.log($scope.currentEvent);
             });
+
+        $scope.deletePlayer = function (player) {
+            $http.get(appConst.apiUrl + 'player/remove/' + player._id);
+                .then(function () {
+                    var playerIndex = $scope.players.indexOf(player);
+                    $scope.players.splice(playerIndex, 1);
+                });
+        }
     }});

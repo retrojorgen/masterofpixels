@@ -4,7 +4,7 @@
 
 masterOfPixels.component('highscores', {
     templateUrl: '/static/app/scripts/views/highscores.html',
-    controller: function ($scope, $http, $timeout, $rootScope, appConst) {
+    controller: function ($scope, $http, $timeout, $rootScope, appConst, $interval) {
 
         $scope.events = [];
         $scope.scores = {};
@@ -16,7 +16,13 @@ masterOfPixels.component('highscores', {
                     $scope.scores = scores.data;
                     console.log('scores', $scope.scores);
                 });
-        }
+        };
+
+
+        $interval(function () {
+            getScores();
+        }, 2000);
+
 
         $http.get(appConst.apiUrl + 'events')
             .then(function (events) {

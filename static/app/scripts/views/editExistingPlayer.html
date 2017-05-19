@@ -24,5 +24,7 @@
     <button ng-click="update()" class="save-game">
         <span ng-if="player._id">Oppdater</span>
         <span ng-if="!player._id">Lagre</span>
+
+        <span ng-repeat="toggle in submitToggle">&nbsp;{{toggle}}</span>
     </button>
 </div>

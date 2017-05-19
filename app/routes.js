@@ -235,6 +235,12 @@ module.exports = function(app, passport, dbQueries, config) {
       });
   });
 
+  app.post('/api/player/remove/:playerId', function (req, res, next) {
+        dbQueries.removePlayer(req.params.playerId, function (player) {
+            res.json(player);
+        });
+    });
+
     app.post('/api/score/update', function (req, res, next) {
         dbQueries.updateScore(req.body, function (score) {
             res.json(score);
@@ -246,6 +252,7 @@ module.exports = function(app, passport, dbQueries, config) {
             res.json(score);
         });
     });
+
 
   app.post('/api/player/:eventId/', function(req, res, next) {
     if(req.body.user._id) {

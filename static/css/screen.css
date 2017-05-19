@@ -185,13 +185,14 @@ h4 {
   border: 2px solid transparent;
   font-family: 'Press Start 2P', cursive;
   font-size: 16px;
+  flex: 1;
 }
-/* line 201, ../app/scss/screen.scss */
+/* line 202, ../app/scss/screen.scss */
 .user-filter::placeholder {
   color: white;
 }
 
-/* line 208, ../app/scss/screen.scss */
+/* line 209, ../app/scss/screen.scss */
 .events-list a.new-player {
   margin-left: 20px;
   font-size: 16px;
@@ -199,26 +200,31 @@ h4 {
   padding: 20px;
   background-color: #feb75b;
   font-family: 'Press Start 2P', cursive;
-  border: 2px solid black;
+  border: 2px solid white;
   display: inline-block;
 }
-/* line 218, ../app/scss/screen.scss */
+/* line 219, ../app/scss/screen.scss */
 .events-list h1 {
   text-align: center;
   padding: 20px;
 }
-/* line 222, ../app/scss/screen.scss */
+/* line 223, ../app/scss/screen.scss */
 .events-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 227, ../app/scss/screen.scss */
+/* line 228, ../app/scss/screen.scss */
 .events-list ul li {
   padding: 10px;
   margin-bottom: 10px;
+  display: flex;
 }
 /* line 232, ../app/scss/screen.scss */
+.events-list ul li .delete-button {
+  margin-left: 20px;
+}
+/* line 237, ../app/scss/screen.scss */
 .events-list a {
   display: block;
   background-color: black;
@@ -227,20 +233,21 @@ h4 {
   color: white;
   text-decoration: none;
   padding: 20px;
-  text-align: center;
+  text-align: left;
+  flex: 1;
 }
 
-/* line 244, ../app/scss/screen.scss */
+/* line 250, ../app/scss/screen.scss */
 .user-edit-row {
   margin-bottom: 60px;
 }
-/* line 246, ../app/scss/screen.scss */
+/* line 252, ../app/scss/screen.scss */
 .user-edit-row label {
   margin-bottom: 16px;
   display: block;
   color: #2dfffe;
 }
-/* line 252, ../app/scss/screen.scss */
+/* line 258, ../app/scss/screen.scss */
 .user-edit-row input {
   font-family: 'Press Start 2P', cursive;
   font-size: 22px;
@@ -253,7 +260,7 @@ h4 {
   background-color: transparent;
 }
 
-/* line 266, ../app/scss/screen.scss */
+/* line 272, ../app/scss/screen.scss */
 .save-game {
   background-color: #feb75b;
   padding: 20px;
@@ -267,7 +274,7 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 280, ../app/scss/screen.scss */
+/* line 286, ../app/scss/screen.scss */
 .application-header {
   display: flex;
   justify-content: flex-start;
@@ -276,21 +283,36 @@ h4 {
   border-bottom: 4px solid #fc0d1b;
   margin-bottom: 40px;
 }
-/* line 287, ../app/scss/screen.scss */
+/* line 293, ../app/scss/screen.scss */
 .application-header h1 {
   border-bottom: 0;
   margin: 0;
 }
-/* line 291, ../app/scss/screen.scss */
+/* line 297, ../app/scss/screen.scss */
 .application-header .back-button {
   display: inline-block;
   background-color: #fc0d1b;
   color: white;
   padding: 10px 20px;
   text-transform: uppercase;
+  max-width: 20%;
 }
 
-/* line 302, ../app/scss/screen.scss */
+/* line 309, ../app/scss/screen.scss */
 .application-padded {
   padding: 20px;
+}
+
+/* line 313, ../app/scss/screen.scss */
+.delete-button {
+  display: block;
+  background-color: #fc0d1b;
+  border: 2px solid white;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
 }

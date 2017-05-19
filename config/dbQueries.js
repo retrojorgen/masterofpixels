@@ -129,7 +129,18 @@ module.exports = function (models, slug) {
             });
 		},
 
-		updatePlayer: function (player, callback) {
+        addPlayer: function (playerId, callback) {
+            Player.findByIdAndRemove(playerId, function (err) {
+            	if(!err) {
+                    Score.find({ "playerId" : playerId}).remove( callback() );
+				} else {
+            		callback(false);
+				}
+			})
+        },
+
+
+        updatePlayer: function (player, callback) {
 			Player.findByIdAndUpdate(player._id, player, function (err, player) {
 				callback(player);
 			});

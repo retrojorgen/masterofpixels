@@ -4,16 +4,18 @@
 
 masterOfPixels.component('editExistingPlayer', {
     templateUrl: '/static/app/scripts/views/editExistingPlayer.html',
-    controller: function ($scope, $http, $timeout, $rootScope, appConst, $routeParams) {
+    controller: function ($scope, $http, $timeout, $rootScope, appConst, $routeParams, $location) {
         $scope.gameLookup = {};
         $scope.scores = [];
         $scope.player = {
             fullName: "",
             email: ""
         };
+
+        $scope.submitToggle = [];
         $scope.eventId = $routeParams.eventId;
 
-        if($routeParams.playerId) {
+        if($routeParams.playerId && $routeParams.playerId != "undefined") {
             $http.get(appConst.apiUrl + 'player/' + $routeParams.playerId)
                 .then(function (player) {
                     $scope.player = player.data;
@@ -61,6 +63,7 @@ masterOfPixels.component('editExistingPlayer', {
                 $http.post(appConst.apiUrl + 'player/update', $scope.player)
                     .then(function () {
                         updateScores();
+                        $scope.submitToggle.push("lagret");
                     });
             }
 
@@ -69,6 +72,10 @@ masterOfPixels.component('editExistingPlayer', {
                     .then(function (player) {
                         $scope.player = player.data;
                         updateScores();
+                        $scope.submitToggle.push("lagret");
+                        $timeout(function () {
+                            $location.path("/event/" + $routeParams.eventId + "/edit-existing-player/" + $scope.player._id);
+                        }, 1000);
                     });
             
         };
@@ -85,5 +92,6 @@ masterOfPixels.component('editExistingPlayer', {
                         })
                 };
             });
+
         }
     }});
