@@ -78,33 +78,37 @@ body {
 .highscore .score-per-game-wrapper {
   position: absolute;
   top: 81px;
-  right: 192px;
+  right: 210px;
 }
-/* line 92, ../app/scss/screen.scss */
+/* line 91, ../app/scss/screen.scss */
+.highscore .score-per-game-wrapper:nth-child(3) {
+  margin-top: 144px;
+}
+/* line 95, ../app/scss/screen.scss */
 .highscore .score-per-game-wrapper .score-per-game {
   margin-bottom: 40px;
 }
-/* line 94, ../app/scss/screen.scss */
+/* line 97, ../app/scss/screen.scss */
 .highscore .score-per-game-wrapper .score-per-game h2 {
   color: #febafe;
 }
-/* line 97, ../app/scss/screen.scss */
+/* line 100, ../app/scss/screen.scss */
 .highscore .score-per-game-wrapper .score-per-game td {
   color: #2dfffe;
 }
 
-/* line 103, ../app/scss/screen.scss */
+/* line 106, ../app/scss/screen.scss */
 h1 {
   color: #fc0d1b;
   border-bottom: 4px solid #fc0d1b;
 }
 
-/* line 107, ../app/scss/screen.scss */
+/* line 110, ../app/scss/screen.scss */
 h4 {
   color: #feb75b;
 }
 
-/* line 111, ../app/scss/screen.scss */
+/* line 114, ../app/scss/screen.scss */
 .rules {
   max-width: 832px;
   width: 832px;
@@ -113,24 +117,24 @@ h4 {
   top: 719px;
   left: 84px;
 }
-/* line 118, ../app/scss/screen.scss */
+/* line 121, ../app/scss/screen.scss */
 .rules h3 {
   font-size: 30px;
 }
-/* line 121, ../app/scss/screen.scss */
+/* line 124, ../app/scss/screen.scss */
 .rules ol {
   margin: 0;
   margin-left: 60px;
   padding: 0;
 }
-/* line 126, ../app/scss/screen.scss */
+/* line 129, ../app/scss/screen.scss */
 .rules li {
   padding: 10px;
   font-size: 20px;
   line-height: 30px;
 }
 
-/* line 132, ../app/scss/screen.scss */
+/* line 135, ../app/scss/screen.scss */
 .top-10-score-container {
   position: absolute;
   left: 72px;
@@ -139,34 +143,34 @@ h4 {
   max-width: 832px;
   height: 628px;
 }
-/* line 139, ../app/scss/screen.scss */
+/* line 142, ../app/scss/screen.scss */
 .top-10-score-container .top-10 {
   width: 832px;
   max-width: 832px;
   color: #efee00;
 }
-/* line 151, ../app/scss/screen.scss */
+/* line 154, ../app/scss/screen.scss */
 .top-10-score-container .top-10 tr:nth-child(1) td, .top-10-score-container .top-10 tr:nth-child(2) td, .top-10-score-container .top-10 tr:nth-child(3) td, .top-10-score-container .top-10 tr:nth-child(4) td {
   font-size: 30px;
   padding-bottom: 20px;
 }
-/* line 164, ../app/scss/screen.scss */
+/* line 167, ../app/scss/screen.scss */
 .top-10-score-container .top-10 tr:nth-child(5) td, .top-10-score-container .top-10 tr:nth-child(6) td, .top-10-score-container .top-10 tr:nth-child(7) td, .top-10-score-container .top-10 tr:nth-child(8) td, .top-10-score-container .top-10 tr:nth-child(9) td, .top-10-score-container .top-10 tr:nth-child(10) td {
   font-size: 20px;
   padding-bottom: 20px;
   color: #feb75b;
 }
-/* line 171, ../app/scss/screen.scss */
+/* line 174, ../app/scss/screen.scss */
 .top-10-score-container .top-10 .name {
   width: 480px;
 }
 
-/* line 179, ../app/scss/screen.scss */
+/* line 182, ../app/scss/screen.scss */
 .user-list li {
   margin-bottom: 5px;
 }
 
-/* line 184, ../app/scss/screen.scss */
+/* line 187, ../app/scss/screen.scss */
 .user-controls {
   text-align: center;
   display: flex;
@@ -175,7 +179,7 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* line 192, ../app/scss/screen.scss */
+/* line 195, ../app/scss/screen.scss */
 .user-filter {
   background-color: #fc0d1b;
   color: white;
@@ -187,12 +191,12 @@ h4 {
   font-size: 16px;
   flex: 1;
 }
-/* line 202, ../app/scss/screen.scss */
+/* line 205, ../app/scss/screen.scss */
 .user-filter::placeholder {
   color: white;
 }
 
-/* line 209, ../app/scss/screen.scss */
+/* line 212, ../app/scss/screen.scss */
 .events-list a.new-player {
   margin-left: 20px;
   font-size: 16px;
@@ -203,28 +207,28 @@ h4 {
   border: 2px solid white;
   display: inline-block;
 }
-/* line 219, ../app/scss/screen.scss */
+/* line 222, ../app/scss/screen.scss */
 .events-list h1 {
   text-align: center;
   padding: 20px;
 }
-/* line 223, ../app/scss/screen.scss */
+/* line 226, ../app/scss/screen.scss */
 .events-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 228, ../app/scss/screen.scss */
+/* line 231, ../app/scss/screen.scss */
 .events-list ul li {
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
 }
-/* line 232, ../app/scss/screen.scss */
+/* line 235, ../app/scss/screen.scss */
 .events-list ul li .delete-button {
   margin-left: 20px;
 }
-/* line 237, ../app/scss/screen.scss */
+/* line 240, ../app/scss/screen.scss */
 .events-list a {
   display: block;
   background-color: black;
@@ -237,17 +241,17 @@ h4 {
   flex: 1;
 }
 
-/* line 250, ../app/scss/screen.scss */
+/* line 253, ../app/scss/screen.scss */
 .user-edit-row {
   margin-bottom: 60px;
 }
-/* line 252, ../app/scss/screen.scss */
+/* line 255, ../app/scss/screen.scss */
 .user-edit-row label {
   margin-bottom: 16px;
   display: block;
   color: #2dfffe;
 }
-/* line 258, ../app/scss/screen.scss */
+/* line 261, ../app/scss/screen.scss */
 .user-edit-row input {
   font-family: 'Press Start 2P', cursive;
   font-size: 22px;
@@ -260,7 +264,7 @@ h4 {
   background-color: transparent;
 }
 
-/* line 272, ../app/scss/screen.scss */
+/* line 275, ../app/scss/screen.scss */
 .save-game {
   background-color: #feb75b;
   padding: 20px;
@@ -274,7 +278,7 @@ h4 {
   text-transform: uppercase;
 }
 
-/* line 286, ../app/scss/screen.scss */
+/* line 289, ../app/scss/screen.scss */
 .application-header {
   display: flex;
   justify-content: flex-start;
@@ -283,12 +287,12 @@ h4 {
   border-bottom: 4px solid #fc0d1b;
   margin-bottom: 40px;
 }
-/* line 293, ../app/scss/screen.scss */
+/* line 296, ../app/scss/screen.scss */
 .application-header h1 {
   border-bottom: 0;
   margin: 0;
 }
-/* line 297, ../app/scss/screen.scss */
+/* line 300, ../app/scss/screen.scss */
 .application-header .back-button {
   display: inline-block;
   background-color: #fc0d1b;
@@ -298,12 +302,12 @@ h4 {
   max-width: 20%;
 }
 
-/* line 309, ../app/scss/screen.scss */
+/* line 312, ../app/scss/screen.scss */
 .application-padded {
   padding: 20px;
 }
 
-/* line 313, ../app/scss/screen.scss */
+/* line 316, ../app/scss/screen.scss */
 .delete-button {
   display: block;
   background-color: #fc0d1b;

@@ -87,7 +87,10 @@ body {
   .score-per-game-wrapper {
     position: absolute;
     top: 81px;
-    right: 192px;
+    right: 210px;
+    &:nth-child(3) {
+      margin-top: 144px;
+    }
 
     .score-per-game {
       margin-bottom: 40px;
