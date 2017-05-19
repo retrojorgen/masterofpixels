@@ -20,7 +20,7 @@ masterOfPixels.component('highscores', {
 
 
         $interval(function () {
-            getScores();
+            getScores($scope.events[0]._id);
         }, 2000);
 
 

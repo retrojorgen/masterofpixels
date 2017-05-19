@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c25df6a-eebc-4653-8bb2-b44e2d67147d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/.sass-cache/b2e8c23cee8d48a02f910ddedc040d78678ad792/screen.scssc" afterPath="$PROJECT_DIR$/static/app/.sass-cache/b2e8c23cee8d48a02f910ddedc040d78678ad792/screen.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.js" afterPath="$PROJECT_DIR$/app/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/dbQueries.js" afterPath="$PROJECT_DIR$/config/dbQueries.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js" afterPath="$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scripts/components/highscoresController.js" afterPath="$PROJECT_DIR$/static/app/scripts/components/highscoresController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scripts/components/playersController.js" afterPath="$PROJECT_DIR$/static/app/scripts/components/playersController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scripts/views/editExistingPlayer.html" afterPath="$PROJECT_DIR$/static/app/scripts/views/editExistingPlayer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scripts/views/players.html" afterPath="$PROJECT_DIR$/static/app/scripts/views/players.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/app/scss/screen.scss" afterPath="$PROJECT_DIR$/static/app/scss/screen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/screen.css" afterPath="$PROJECT_DIR$/static/css/screen.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="players.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="players.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/scripts/views/players.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -60,6 +50,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
               <caret line="237" column="17" lean-forward="false" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editExistingPlayerController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-852">
+              <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highscoresController.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/app/scripts/components/highscoresController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -106,11 +116,11 @@
         <option value="$PROJECT_DIR$/static/app/scripts/views/editExistingPlayer.html" />
         <option value="$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js" />
         <option value="$PROJECT_DIR$/static/app/scss/screen.scss" />
-        <option value="$PROJECT_DIR$/static/app/scripts/components/highscoresController.js" />
         <option value="$PROJECT_DIR$/app/routes.js" />
         <option value="$PROJECT_DIR$/config/dbQueries.js" />
         <option value="$PROJECT_DIR$/static/app/scripts/components/playersController.js" />
         <option value="$PROJECT_DIR$/static/app/scripts/views/players.html" />
+        <option value="$PROJECT_DIR$/static/app/scripts/components/highscoresController.js" />
       </list>
     </option>
   </component>
@@ -858,15 +868,16 @@
       <workItem from="1493140526750" duration="511000" />
       <workItem from="1494005297329" duration="8098000" />
       <workItem from="1494870894143" duration="18733000" />
-      <workItem from="1494973745645" duration="3075000" />
+      <workItem from="1494973745645" duration="3618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33801000" />
+    <option name="totallyTimeSpent" value="34344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="836" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -880,7 +891,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35407725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1177,14 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/scripts/components/highscoresController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/app/scss/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -1197,14 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -1245,6 +1240,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app/scripts/components/editExistingPlayerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-852">
+          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app/scripts/components/highscoresController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding />
         </state>
       </provider>
