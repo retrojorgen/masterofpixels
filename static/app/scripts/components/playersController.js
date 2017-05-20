@@ -22,7 +22,7 @@ masterOfPixels.component('players', {
             });
 
         $scope.deletePlayer = function (player) {
-            $http.get(appConst.apiUrl + 'player/remove/' + player._id);
+            $http.get(appConst.apiUrl + 'player/remove/' + player._id)
                 .then(function () {
                     var playerIndex = $scope.players.indexOf(player);
                     $scope.players.splice(playerIndex, 1);

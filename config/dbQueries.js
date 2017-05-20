@@ -74,7 +74,6 @@ module.exports = function (models, slug) {
 
 		getGamesByIds: function (gameIds, callback) {
 			Game.find({_id: {$in: gameIds}}, function (err, games) {
-				console.log('got games', games);
 				if(!err) {
 					callback(games);
 				} else {
@@ -86,7 +85,6 @@ module.exports = function (models, slug) {
 		getScoresForPlayerInEventByGameIdsAndPlayerIdAndEventId: function (gameIds, eventId, playerId, callback) {
 			console.log(eventId);
 			Score.find({gameId: {$in: gameIds}, playerId: playerId, eventId: eventId}, function (err, scores) {
-				console.log('got scores', scores);
 				if(!err) {
 					callback(scores);
 				} else {
@@ -123,16 +121,30 @@ module.exports = function (models, slug) {
 
 
 		addPlayer: function (player, callback) {
-            var newPlayer = new Player(player);
+            console.log('Other side', player);
+            var newPlayer = new Player({
+                "fullName": player.fullName || '',
+                "email": player.email || ''
+			});
+
             newPlayer.save(function (err) {
-                callback(newPlayer);
+            	console.log('saving');
+            	if(err) {
+            		console.log('error happened', err);
+				} else {
+            		console.log('created player');
+                    callback(newPlayer);
+				}
+
             });
 		},
 
-        addPlayer: function (playerId, callback) {
+        removePlayer: function (playerId, callback) {
+			console.log('removing platyer ', playerId);
             Player.findByIdAndRemove(playerId, function (err) {
             	if(!err) {
-                    Score.find({ "playerId" : playerId}).remove( callback() );
+            		console.log(err);
+            		callback(false);
 				} else {
             		callback(false);
 				}

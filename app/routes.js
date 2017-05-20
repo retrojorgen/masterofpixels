@@ -230,13 +230,15 @@ module.exports = function(app, passport, dbQueries, config) {
   });
 
   app.post('/api/player/add', function (req, res, next) {
+    console.log('1 adding', req.body);
       dbQueries.addPlayer(req.body, function (player) {
           res.json(player);
       });
   });
 
-  app.post('/api/player/remove/:playerId', function (req, res, next) {
-        dbQueries.removePlayer(req.params.playerId, function (player) {
+   app.get('/api/player/remove/:removeId', function (req, res, next) {
+     console.log('removing');
+        dbQueries.removePlayer(req.params.removeId, function (player) {
             res.json(player);
         });
     });
@@ -254,7 +256,7 @@ module.exports = function(app, passport, dbQueries, config) {
     });
 
 
-  app.post('/api/player/:eventId/', function(req, res, next) {
+  app.post('/api/player/:eventId', function(req, res, next) {
     if(req.body.user._id) {
       _.each(req.body.scores, function (score) {
           dbQueries.addScore(score, req.body.user, function () {
