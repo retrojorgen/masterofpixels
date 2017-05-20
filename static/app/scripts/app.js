@@ -3,7 +3,7 @@ var mobileThreshold = (window.innerWidth < 800);
 var masterOfPixels = angular
 	.module('masterOfPixels', ['ngRoute', 'ngAnimate', 'underscore', 'ngSanitize', 'puElasticInput', 'angular-storage', 'angularMoment', 'angular-click-outside', 'datePicker'])
 	.constant("appConst", {
-		"apiUrl": "http://localhost:4444/api/"
+		"apiUrl": "/api/"
 	})
 	.run(function(amMoment, $rootScope) {
 		amMoment.changeLocale('no');

@@ -1,5 +1,4 @@
 {"_id":{"$oid":"58f25b778a2d6bfac24a0fa8"},"gameName":"Tetris","console":"NES"}
 {"_id":{"$oid":"58f25b8f8a2d6bfac24a0fa9"},"gameName":"Donkey Kong","console":"NES"}
 {"_id":{"$oid":"58f25d0f8a2d6bfac24a0faa"},"gameName":"My Hero","console":"SMS"}
-{"_id":{"$oid":"591edefed720d74ea136aa71"},"gameName":"Fantasy Zone 2","console":"Mega Drive"}
-{"_id":{"$oid":"591edf65d720d74ea136aa72"},"gameName":"Tempest X3","console":"Mega Drive"}
+{"_id":{"$oid":"591edefed720d74ea136aa71"},"gameName":"Fantasy Z. 2","console":"Mega Drive"}

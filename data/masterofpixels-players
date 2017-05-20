@@ -1,10 +1,5 @@
-{"_id":{"$oid":"58f256bc8a2d6bfac24a0fa5"},"fullName":"Jørgen Jacobsen","email":"jorgeja@gmail.com"}
-{"_id":{"$oid":"590cc0f557af23534add7daf"},"fullName":"Sveigard Bartefjes","email":"bart@bartefjes.com"}
-{"_id":{"$oid":"590cc7f257af23534add7db3"},"fullName":"Sveigard fjertefjes","email":"bart@bartefjes.com"}
-{"_id":{"$oid":"590ccb9e57af23534add7dbb"},"fullName":"Skabel bobel","email":"baret@bartefjes.com","created":{"$date":1494971496116}}
-{"_id":{"$oid":"591b78581c8c06b99efe66ba"},"fullName":"Jarl Goli","email":"goli@gallum.no","created":{"$date":1494972504524},"__v":0}
-{"_id":{"$oid":"591b79451c8c06b99efe66c1"},"fullName":"fise prompenese","email":"pro@gs.dd","created":{"$date":1494972741314},"__v":0}
-{"_id":{"$oid":"591b795f1c8c06b99efe66c5"},"fullName":"fise prompenese","email":"heste fjeste","created":{"$date":1494972767152},"__v":0}
-{"_id":{"$oid":"591b799d1c8c06b99efe66c9"},"fullName":"skrompe promp","email":"heste heste","created":{"$date":1494972829683},"__v":0}
-{"_id":{"$oid":"591b79c31c8c06b99efe66cd"},"fullName":"abel babel","email":"skabel@babel.babel","created":{"$date":1494972867032},"__v":0}
-{"_id":{"$oid":"591b79e01c8c06b99efe66d1"},"fullName":"Jørgen Jørgensen","email":"jj@gmail.com","created":{"$date":1494972896685},"__v":0}
+{"fullName":"David Olaussen","email":"dd","_id":{"$oid":"59200137b8828c7456e8502e"},"created":{"$date":1495269687631},"__v":0}
+{"fullName":"Andreas Bernhardsen","email":"aa","_id":{"$oid":"5920016bb8828c7456e85033"},"created":{"$date":1495269739579},"__v":0}
+{"fullName":"Robert Beresford","email":"nifcp1@gmail.com","_id":{"$oid":"5920070fb8828c7456e85038"},"created":{"$date":1495271183054},"__v":0}
+{"fullName":"Sondre Tjøntveit","email":"Sondretjontveit@gmail.com","_id":{"$oid":"59201008b8828c7456e85042"},"created":{"$date":1495273480914},"__v":0}
+{"fullName":"test","email":"test","_id":{"$oid":"592011a9b8828c7456e85047"},"created":{"$date":1495273897153},"__v":0}
