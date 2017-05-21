@@ -14,6 +14,9 @@ var masterOfPixels = angular
 		when('/highscores', {
 			'template': '<highscores></highscores>'
 		}).
+        when('/advert', {
+            'template': '<advert></advert>'
+        }).
         when('/events', {
             'template': '<events></events>'
         }).

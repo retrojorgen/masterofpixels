@@ -20,15 +20,15 @@ masterOfPixels.component('highscores', {
 
 
         $interval(function () {
-            getScores($scope.events[0]._id);
+            getScores($scope.events[1]._id);
         }, 2000);
 
 
         $http.get(appConst.apiUrl + 'events')
             .then(function (events) {
                 $scope.events = events.data;
-                $scope.currentEvent = $scope.events[0];
+                $scope.currentEvent = $scope.events[1];
                 console.log($scope.currentEvent);
-                getScores($scope.events[0]._id);
+                getScores($scope.events[1]._id);
             });
     }});
